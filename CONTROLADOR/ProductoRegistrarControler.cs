@@ -3,7 +3,7 @@ using System.Data;
 
 namespace CONTROLADOR
 {
-    public class ControlerProductoRegistrar
+    public class ProductoRegistrarControler
     {
         private Producto oProd = new Producto();
         public DataTable GetCategorias()

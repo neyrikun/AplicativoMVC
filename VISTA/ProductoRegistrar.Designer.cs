@@ -184,6 +184,7 @@
             // ComboProveedor
             // 
             ComboProveedor.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            ComboProveedor.DropDownStyle = ComboBoxStyle.DropDownList;
             ComboProveedor.FormattingEnabled = true;
             ComboProveedor.Location = new Point(182, 10);
             ComboProveedor.Name = "ComboProveedor";
@@ -222,6 +223,7 @@
             // ComboCategoría
             // 
             ComboCategoría.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            ComboCategoría.DropDownStyle = ComboBoxStyle.DropDownList;
             ComboCategoría.FormattingEnabled = true;
             ComboCategoría.Location = new Point(182, 10);
             ComboCategoría.Name = "ComboCategoría";

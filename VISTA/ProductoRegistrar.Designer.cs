@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Aceptar = new Button();
+            Guardar = new Button();
             Cancelar = new Button();
             Campos = new TableLayoutPanel();
             Nombre = new TableLayoutPanel();
@@ -63,21 +63,24 @@
             Botones.SuspendLayout();
             SuspendLayout();
             // 
-            // Aceptar
+            // Guardar
             // 
-            Aceptar.Dock = DockStyle.Fill;
-            Aceptar.Font = new Font("Lucida Sans Unicode", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Aceptar.Location = new Point(188, 5);
-            Aceptar.Margin = new Padding(5);
-            Aceptar.Name = "Aceptar";
-            Aceptar.Size = new Size(174, 39);
-            Aceptar.TabIndex = 0;
-            Aceptar.Text = "Aceptar";
-            Aceptar.UseVisualStyleBackColor = true;
-            Aceptar.Click += Aceptar_Click;
+            Guardar.BackColor = SystemColors.Window;
+            Guardar.Dock = DockStyle.Fill;
+            Guardar.Font = new Font("Lucida Sans Unicode", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Guardar.ForeColor = SystemColors.ControlText;
+            Guardar.Location = new Point(188, 5);
+            Guardar.Margin = new Padding(5);
+            Guardar.Name = "Guardar";
+            Guardar.Size = new Size(174, 39);
+            Guardar.TabIndex = 0;
+            Guardar.Text = "Guardar";
+            Guardar.UseVisualStyleBackColor = false;
+            Guardar.Click += Guardar_Click;
             // 
             // Cancelar
             // 
+            Cancelar.BackColor = SystemColors.Control;
             Cancelar.Dock = DockStyle.Fill;
             Cancelar.Font = new Font("Lucida Sans Unicode", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Cancelar.Location = new Point(5, 5);
@@ -86,7 +89,7 @@
             Cancelar.Size = new Size(173, 39);
             Cancelar.TabIndex = 1;
             Cancelar.Text = "Cancelar";
-            Cancelar.UseVisualStyleBackColor = true;
+            Cancelar.UseVisualStyleBackColor = false;
             Cancelar.Click += Cancelar_Click;
             // 
             // Campos
@@ -184,6 +187,7 @@
             // ComboProveedor
             // 
             ComboProveedor.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            ComboProveedor.DropDownStyle = ComboBoxStyle.DropDownList;
             ComboProveedor.FormattingEnabled = true;
             ComboProveedor.Location = new Point(182, 10);
             ComboProveedor.Name = "ComboProveedor";
@@ -222,6 +226,7 @@
             // ComboCategoría
             // 
             ComboCategoría.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            ComboCategoría.DropDownStyle = ComboBoxStyle.DropDownList;
             ComboCategoría.FormattingEnabled = true;
             ComboCategoría.Location = new Point(182, 10);
             ComboCategoría.Name = "ComboCategoría";
@@ -378,7 +383,7 @@
             Botones.ColumnCount = 2;
             Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             Botones.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            Botones.Controls.Add(Aceptar, 1, 0);
+            Botones.Controls.Add(Guardar, 1, 0);
             Botones.Controls.Add(Cancelar, 0, 0);
             Botones.Dock = DockStyle.Fill;
             Botones.Location = new Point(13, 326);
@@ -421,7 +426,7 @@
 
         #endregion
 
-        private Button Aceptar;
+        private Button Guardar;
         private Button Cancelar;
         private TableLayoutPanel Botones;
         private TableLayoutPanel Contenedor;

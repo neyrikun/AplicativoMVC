@@ -4,6 +4,7 @@ namespace AplicativoMVC
 {
     public partial class Main : Form
     {
+        
         private ControlerMain oControlerMain = new ControlerMain();
 
         public Main()

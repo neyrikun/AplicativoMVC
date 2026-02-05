@@ -47,14 +47,7 @@ namespace MODELO
 
 
 
-            string sql = "SELECT t1.IdProducto,t1.NombreProducto,pr.NombreCompañía AS Proveedor, t1.NombreCategoría AS Categoría, t1.CantidadPorUnidad,t1.PrecioUnidad,t1.UnidadesEnExistencia, " +
-                " t1.UnidadesEnPedido,t1.NivelNuevoPedido,t1.Suspendido" +
-                " FROM" +
-                " (SELECT p.*, c.NombreCategoría" +
-                " FROM Productos AS p INNER JOIN Categorías AS c" +
-                " ON p.IdCategoría = c.IdCategoría) AS t1" +
-                " INNER JOIN Proveedores AS pr" +
-                " ON t1.IdProveedor = pr.IdProveedor ORDER BY t1.IdProducto;";
+            string sql = "SELECT * FROM Productos";
             Debug.WriteLine(sql);
             DataTable datos = db.EjecutarConsulta(sql);
 

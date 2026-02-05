@@ -14,8 +14,6 @@ namespace AplicativoMVC
 {
     public partial class ProductoRegistrar : Form
     {
-        private ProductoRegistrarControler oProductoRegistrarControler = new ProductoRegistrarControler();
-
         public ProductoRegistrar()
         {
             InitializeComponent();
@@ -23,19 +21,7 @@ namespace AplicativoMVC
 
         private void ProductoRegistrar_Load(object sender, EventArgs e)
         {
-            //Vinculación a una fuente de datos(DataBinding)
-            //Para colecciones más grandes o datos de bases de datos, usa DataSource.
-            ComboProveedor.DataSource = oProductoRegistrarControler.GetProveedores();
-            // Si es un objeto, especifica el DisplayMember y ValueMember
-            ComboProveedor.DisplayMember = "NombreCompañía"; // Propiedad a mostrar
-            ComboProveedor.ValueMember = "IdProveedor";      // Propiedad para el valor
 
-
-
-            ComboCategoría.DataSource = oProductoRegistrarControler.GetCategorias();
-            // Si es un objeto, especifica el DisplayMember y ValueMember
-            ComboCategoría.DisplayMember = "NombreCategoría"; // Propiedad a mostrar
-            ComboCategoría.ValueMember = "IdCategoría";      // Propiedad para el valor
         }
 
         private void Guardar_Click(object sender, EventArgs e)

@@ -40,7 +40,11 @@
             // AgregarProducto
             // 
             AgregarProducto.Dock = DockStyle.Right;
-            AgregarProducto.Location = new Point(457, 3);
+
+            AgregarProducto.Location = new Point(456, 3);
+
+            AgregarProducto.Location = new Point(454, 3);
+
             AgregarProducto.Name = "AgregarProducto";
             AgregarProducto.Size = new Size(160, 38);
             AgregarProducto.TabIndex = 0;
@@ -54,7 +58,11 @@
             DataGridProductos.Dock = DockStyle.Fill;
             DataGridProductos.Location = new Point(13, 63);
             DataGridProductos.Name = "DataGridProductos";
-            DataGridProductos.Size = new Size(620, 374);
+
+            DataGridProductos.Size = new Size(619, 374);
+
+            DataGridProductos.Size = new Size(617, 374);
+
             DataGridProductos.TabIndex = 1;
             // 
             // Contenedor
@@ -70,7 +78,11 @@
             Contenedor.RowCount = 2;
             Contenedor.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             Contenedor.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            Contenedor.Size = new Size(646, 450);
+
+            Contenedor.Size = new Size(645, 450);
+
+            Contenedor.Size = new Size(643, 450);
+
             Contenedor.TabIndex = 2;
             // 
             // Botones
@@ -85,14 +97,22 @@
             Botones.RowCount = 1;
             Botones.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             Botones.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            Botones.Size = new Size(620, 44);
+
+            Botones.Size = new Size(619, 44);
+
+            Botones.Size = new Size(617, 44);
+
             Botones.TabIndex = 0;
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(646, 450);
+
+            ClientSize = new Size(645, 450);
+
+            ClientSize = new Size(643, 450);
+
             Controls.Add(Contenedor);
             Name = "Main";
             Text = "Form1";
